@@ -1,13 +1,1 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>Redirigiendo…</title>
-<script>
-  const segs = location.pathname.split('/').filter(Boolean);
-  const last = segs[segs.length - 1] || '';
-  const juegos = ['globo','dados','ruleta','minas','trivia','cartas','mom'];
-  if (juegos.includes(last)) {
-    location.replace('/panelgenesis/games/' + last + '.html' + location.search + location.hash);
-  } else {
-    location.replace('/panelgenesis/');
-  }
-</script>
+
